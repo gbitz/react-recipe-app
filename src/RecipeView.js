@@ -1,9 +1,6 @@
 import React from "react";
 
-function RecipeView({recipe}) {
-    console.log(recipe);
-    
-
+function RecipeView({recipe, handleDelete, index}) {
     return (
             <>
             <td>{recipe.name}</td>
@@ -12,7 +9,7 @@ function RecipeView({recipe}) {
             <td>{recipe.ingredients}</td>
             <td>{recipe.preparation}</td>
             <td>
-                <button name="delete">Delete</button>
+                <button name="delete" onClick={() => handleDelete(index)}>Delete</button>
             </td>
             </>
     )

@@ -20,10 +20,7 @@ function RecipeCreate({recipes, setRecipes}) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    
     setRecipes([...recipes, formData])
-    console.log(recipes);
-      
     setFormData({...initialFormState});
   }
   // TODO: When the form is submitted, a new recipe should be created, and the form contents cleared.
