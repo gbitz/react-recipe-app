@@ -6,11 +6,10 @@ function RecipeList({recipes, handleDelete}) {
   // TODO: Display the list of recipes using the structure of table that is provided.
   // TODO: Create at least one additional component that is used by this component.
   // TODO: Each recipe row must have a delete button - <button name="delete">Delete</button> - that deletes the post when clicked
-  console.log(recipes);
   
   const recipeRows = recipes.map((recipe, index) => {
     return (
-      <tr key={index}>
+      <tr className="row" key={index}>
         <RecipeView recipe={recipe} handleDelete={handleDelete} index={index} />
       </tr>
     )
@@ -20,7 +19,7 @@ function RecipeList({recipes, handleDelete}) {
     <div className="recipe-list">
       <table>
         <thead>
-          <tr>
+          <tr className="row">
             <th>Name</th>
             <th>Cuisine</th>
             <th>Photo</th>

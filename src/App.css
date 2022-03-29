@@ -60,6 +60,20 @@ table {
 }
 
 /* Column Size for thead */
+.row th:nth-child(4), .row th:nth-child(5)  {
+  width: 30%;
+}
 
+.row th:nth-child(1), .row th:nth-child(2), .row th:nth-child(3), .row th:nth-child(6)  {
+  width: 10%;
+}
 
 /* Column size for tbody */
+.row td:nth-child(4), .row td:nth-child(5)  {
+  width: 30%;
+}
+
+.row td:nth-child(1), .row td:nth-child(2), .row td:nth-child(3), .row td:nth-child(6)  {
+  width: 10%;
+}
+

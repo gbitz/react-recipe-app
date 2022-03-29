@@ -31,14 +31,13 @@ function RecipeCreate({recipes, setRecipes}) {
     <form onSubmit={handleSubmit} name="create">
       <table>
         <tbody>
-          <tr>
+          <tr className="row">
             <td>
               <input
                 id="name"
                 name="name"
                 placeholder="Name"
                 onChange={handleChange}
-                // value={formData.name}
               />
             </td>
             <td>
