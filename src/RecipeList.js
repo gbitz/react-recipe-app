@@ -9,9 +9,7 @@ function RecipeList({recipes, handleDelete}) {
   
   const recipeRows = recipes.map((recipe, index) => {
     return (
-      <tr className="row" key={index}>
-        <RecipeView recipe={recipe} handleDelete={handleDelete} index={index} />
-      </tr>
+        <RecipeView recipe={recipe} handleDelete={handleDelete} key={index} />
     )
   })
 
@@ -28,7 +26,7 @@ function RecipeList({recipes, handleDelete}) {
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="body">
           {recipeRows}
         </tbody>
       </table>

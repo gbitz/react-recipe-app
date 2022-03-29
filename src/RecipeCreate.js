@@ -30,7 +30,7 @@ function RecipeCreate({recipes, setRecipes}) {
   return (
     <form onSubmit={handleSubmit} name="create">
       <table>
-        <tbody>
+        <tbody className="body">
           <tr className="row">
             <td>
               <input

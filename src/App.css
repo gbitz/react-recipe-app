@@ -77,3 +77,7 @@ table {
   width: 10%;
 }
 
+.body tr:nth-child(odd) {
+  background-color: #fff0c7;
+}
+
