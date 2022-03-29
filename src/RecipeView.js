@@ -1,6 +1,7 @@
 import React from "react";
 
 function RecipeView({recipe, handleDelete, index}) {
+    
     return (
             <tr className="row" key={index}>
                 <td>{recipe.name}</td>

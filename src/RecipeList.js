@@ -9,7 +9,7 @@ function RecipeList({recipes, handleDelete}) {
   
   const recipeRows = recipes.map((recipe, index) => {
     return (
-        <RecipeView recipe={recipe} handleDelete={handleDelete} key={index} />
+        <RecipeView recipe={recipe} handleDelete={handleDelete} index={index} />
     )
   })
 
